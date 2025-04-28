@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>The new facility features the latest in safety technology, environmental protection systems, and efficient loading/unloading infrastructure. This investment represents our commitment to meeting the growing demands of the energy sector while maintaining the highest standards of operational excellence.</p>
                 <p>"This expansion is a significant milestone in our company's growth strategy," said our CEO. "The Houston facility strengthens our position in a key market and enables us to better serve our clients across the Gulf Coast region."</p>
             `,
-            image: '../assets/saron pics Done/img11.jpg'
+            image: './src/assets/img11.jpg'
         },
         {
             id: 2,
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>This prestigious recognition highlights our team's dedication to maintaining the highest safety standards in all operations. Over the past five years, we have implemented our comprehensive Safety First program, resulting in zero lost-time incidents across all facilities.</p>
                 <p>"Safety has always been our top priority," commented our Safety Director. "This award belongs to every employee who contributes to our culture of vigilance and continuous improvement in safety practices."</p>
             `,
-            image: '../assets/saron pics Done/img12.jpg'
+            image: './src/assets/img12.jpg'
         },
         {
             id: 3,
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>This certification verifies that our operations meet international standards for environmental responsibility. Our comprehensive approach includes advanced spill prevention systems, emissions reduction initiatives, and sustainable waste management practices.</p>
                 <p>"This certification reflects our commitment to environmental stewardship," stated our Environmental Compliance Manager. "We believe that responsible storage operations and environmental protection go hand in hand."</p>
             `,
-            image: '../assets/saron pics Done/img13.jpg'
+            image: './src/assets/img13.jpg'
         }
     ];
 
