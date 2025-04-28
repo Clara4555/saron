@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="../styles/public.css">
 </head>
 <body>
     <!-- Header -->
@@ -250,10 +251,13 @@
                     </div>
                 </div>
                 
-                <div class="sustainability-progress mt-5">
+                <div class="sustainability-progress mt-5 items-center">
                     <h3 class="text-center mb-4">Our Progress</h3>
-                    
-                    <div class="progress-metrics">
+            
+                
+                    <!-- Progress metrics container -->
+                    <div class="flex-container">
+                    <div class="progress-metrics flex flex-col lg:w-1/2">
                         <div class="metric-item">
                             <div class="metric-label">Emissions Reduction</div>
                             <div class="progress-bar">
@@ -286,7 +290,17 @@
                             <div class="metric-target">Target: 80% by 2025</div>
                         </div>
                     </div>
+                    <!-- Image container -->
+        <div class="image-container">
+            <!-- Static images added directly in HTML -->
+            <img class="progress-image" src="../assets/saron pics Done/img14.jpg" alt="Sustainability Progress 1" id="image1">
+            <img class="progress-image" src="../assets/saron pics Done/img15.jpg" alt="Sustainability Progress 2" id="image2" style="display:none;">
+            <img class="progress-image" src="../assets/saron pics Done/img16.jpg" alt="Sustainability Progress 3" id="image3" style="display:none;">
+            <img class="progress-image" src="../assets/saron pics Done/img9.jpg" alt="Sustainability Progress 4" id="image4" style="display:none;">
+        </div>
+                    </div>
                 </div>
+                
             </div>
         </section>
         
@@ -404,5 +418,26 @@
     
     <!-- JavaScript -->
     <script src="../script/script.js"></script>
+    <script>
+        let currentIndex = 0; // Initial index for images
+
+const images = document.querySelectorAll(".progress-image");
+const totalImages = images.length;
+
+// Function to change the image every 5 seconds
+setInterval(() => {
+    // Hide all images
+    images.forEach(image => {
+        image.style.display = 'none';
+    });
+
+    // Show the current image based on index
+    images[currentIndex].style.display = 'block';
+
+    // Update the index to the next image
+    currentIndex = (currentIndex + 1) % totalImages;
+}, 5000);  // Change the image every 5 seconds
+
+    </script>
 </body>
 </html>

@@ -1,0 +1,174 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Sustainability progress container */
+.sustainability-progress {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+/* Flex container for side-by-side layout */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12rem;  /* Space between progress metrics and image */
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+
+/* Progress metrics container */
+.progress-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 500px;
+}
+
+/* Individual metric item */
+.metric-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Metric label */
+.metric-label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Progress bar */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+/* Progress fill */
+.progress-fill {
+    height: 100%;
+    background-color: #4caf50;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    border-radius: 5px;
+}
+
+/* Metric target */
+.metric-target {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Image container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px; /* Set a max width for the image */
+    width: 100%;
+     overflow: hidden; /* Hide images that are outside the container */
+}
+
+/* Image styling */
+.progress-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+  
+}
+/* Image container styling */
+.hero-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Hide all images by default */
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Show only the first image initially */
+#image1 {
+    opacity: 1;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Stack the content vertically on smaller screens */
+        align-items: center;
+    }
+
+    .progress-metrics {
+        max-width: 100%;
+    }
+
+    .image-container {
+        margin-top: 2rem;
+    }
+}
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Buttons */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: red;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  

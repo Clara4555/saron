@@ -244,3 +244,20 @@ document.addEventListener('DOMContentLoaded', function() {
         initGallery();
     }
 });
+
+// Intersection Observer to animate on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.2 // Trigger when 20% of element is visible
+  });
+  
+  // Select everything you want to animate
+  document.querySelectorAll('h1, h2, p, a, img').forEach(el => {
+    observer.observe(el);
+  });
+  

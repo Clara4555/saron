@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./src/styles/main.css">
     <link rel="stylesheet" href="./src/styles/navbar.css">
     <link rel="stylesheet" href="./src/styles/responsive.css">
+    <link rel="stylesheet" href="./src/styles/public.css">
 </head>
 <body>
     <!-- Header -->
@@ -71,18 +72,25 @@
     <!-- Main Content -->
     <main class="main">
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Industry Leading Tank Storage Solutions</h1>
-                    <p class="hero-text">Saron Inc. provides cutting-edge storage solutions for the oil, gas, and chemical industries. Our state-of-the-art facilities offer secure, efficient, and environmentally responsible storage options.</p>
-                    <div class="hero-buttons">
-                        <a href="./src/pages/services.html" class="btn btn-primary btn-lg">Our Services</a>
-                        <a href="./src/pages/contact.html" class="btn btn-outline btn-lg">Get in Touch</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+       <!-- Hero Section -->
+    <div class="hero" id="hero">
+      <div class="overlay">
+        <div class="hero-content">
+          <div class="welcome-text">Welcome to</div>
+          <div class="company-name">Saron   Industry Leading Tank Storage Solutions</div>
+          <div class="description">
+            Saron Inc. provides cutting-edge storage solutions for the oil, gas, and chemical industries. Our state-of-the-art facilities offer secure, efficient, and environmentally responsible storage options.
+          </div>
+          <div class="buttons">
+            <a href="./src/pages/about-us.html" class="btn btn-primary">Learn More →</a>
+            <a  href="./src/pages/services.html" class="btn btn-secondary">Our Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
 
         <!-- About Section -->
         <section class="section about-section">
@@ -382,5 +390,45 @@
     <script src="./src/script/contact.js"></script>
     <script src="./src/script/news.js"></script>
     <script src="./src/script/script.js"></script>
+    <script>
+      const hero = document.getElementById("hero");
+const images = [
+  "./src/assets/img1.jpg",  // Replace with your actual image paths
+  "./src/assets/img6.jpg",
+  "./src/assets/img8.jpg"
+];
+
+let index = 0;
+
+function changeBackground() {
+  hero.style.backgroundImage = `url('${images[index]}')`;
+  index = (index + 1) % images.length;
+}
+
+// Initial load
+changeBackground();
+
+// Change image every 5 seconds
+setInterval(changeBackground, 5000);
+// Trigger service cards animation when they enter viewport
+document.addEventListener("DOMContentLoaded", () => {
+    const services = document.querySelectorAll('.service');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    }, { threshold: 0.3 });
+
+    services.forEach(service => {
+        observer.observe(service);
+    });
+});
+
+
+
+    </script>
 </body>
 </html>

@@ -1,29 +1,4 @@
-/*==============================================================================
-* Main CSS for Tank Oiling Storage Company
-* Author: Professional Web Developer
-* Version: 1.0
-===============================================================================*/
 
-/*==============================================================================
-* CSS Table of Contents
-* 1. Fonts and Typography
-* 2. Root Variables
-* 3. Reset and Base Styles
-* 4. Layout Containers
-* 5. Header and Navigation
-* 6. Hero Section
-* 7. Main Content
-* 8. Cards and Features
-* 9. Buttons
-* 10. Forms
-* 11. Footer
-* 12. Back to Top Button
-* 13. Utility Classes
-===============================================================================*/
-
-/*==============================================================================
-* 1. Fonts and Typography
-===============================================================================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 /*==============================================================================
@@ -115,7 +90,72 @@ body {
     color: var(--dark);
     background-color: var(--light-grey);
     overflow-x: hidden;
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
+
+/* Basic Reset */
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Headings */
+h1, h2{
+  margin: 20px 0;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px auto;
+   
+ 
+  }
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+a:hover {
+  color: #ff5722;
+}
+
+/* Images */
+img {
+  /* width: 100%; */
+  max-width: 100%;
+  display: block;
+  /* margin: 20px auto; */
+  border-radius: 10px;
+  transform: scale(0.8);
+  transition: all 0.8s ease-out;
+}
+
+/* When visible */
+.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
@@ -162,6 +202,31 @@ a {
 a:hover {
     color: var(--primary-dark);
 }
+/* General transition for smooth effects */
+
+
+body, html{
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+  }
+  
+
+img {
+    transition: all 0.4s ease-in-out;
+}
+
+/* Image transition (smooth zoom effect on hover) */
+img {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
 
 ul, ol {
     margin-bottom: var(--space-md);
@@ -421,31 +486,112 @@ img {
 .hero {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('../assets/saron\ pics\ Done/img6.jpg') no-repeat center/cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    color: var(--white);
-    padding-top: var(--header-height);
-}
-
-.hero-content {
+    padding: 0 20px;
+  }
+  
+  .hero-content {
+    color: #fff;
     max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-title {
     font-size: 3.5rem;
     margin-bottom: var(--space-lg);
-    color: var(--white);
-    line-height: 1.2;
-}
+     color: var(--white); 
+     line-height: 1.2; 
+  }
+  
+  .welcome-text {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 
+  }
+  
+  .company-name {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: var(--h5-size); margin-bottom: var(--space-xl); color: var(--light-grey);
+  }
+  
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #c10c0c;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #9e0a0a;
+  }
+  
+  .btn-secondary {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* keyframes */
+  @keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    33.33% {
+      transform: translateX(-33.33%); 
+    }
+    66.66% {
+      transform: translateX(-66.66%); 
+    }
+    100% {
+      transform: translateX(0); 
+    }
+  }
+  
+  
 .hero-text {
     font-size: var(--h5-size);
     margin-bottom: var(--space-xl);

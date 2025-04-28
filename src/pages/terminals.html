@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="../styles/public.css">
 </head>
 <body>
     <!-- Header -->
@@ -140,113 +141,21 @@
                 </div>
                 
                 <div class="terminal-map-container">
-                    <!-- In a real implementation, this would be an interactive map using Google Maps or similar API -->
-                    <div class="terminal-map">
-                        <img src="../assets/saron pics Done/img7.jpg" alt="Saron Global Terminal Map" class="img-fluid rounded shadow">
+                    <div class="slider">
+                      <div class="slides" id="slides">
+                        <img src="../assets/saron pics Done/img7.jpg" alt="Saron Map 1" class="slide img-fluid rounded shadow">
+                        <img src="../assets/terminal.jpg" alt="Saron Map 2" class="slide img-fluid rounded shadow">
+                        <img src="../assets/terminal2.jpg" alt="Saron Map 3" class="slide img-fluid rounded shadow">
+                        <img src="../assets/terminal3.jpg" alt="Saron Map 3" class="slide img-fluid rounded shadow">
+                        <img src="../assets/terminal4.jpg" alt="Saron Map 3" class="slide img-fluid rounded shadow">
+                      </div>
+                  
+                      <!-- Left and Right Buttons -->
+                      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                      <button class="next" onclick="moveSlide(1)">&#10095;</button>
                     </div>
-                    
-                    <div class="terminal-regions mt-5">
-                        <div class="region-tabs">
-                            <button class="region-tab active" data-region="north-america">North America</button>
-                            <button class="region-tab" data-region="europe">Europe</button>
-                            <button class="region-tab" data-region="asia-pacific">Asia-Pacific</button>
-                        </div>
-                        
-                        <div class="region-content mt-4">
-                            <div class="region-panel active" id="north-america-terminals">
-                                <div class="terminals-list">
-                                    <div class="terminal-item">
-                                        <h3>Houston Terminal (Headquarters)</h3>
-                                        <p><strong>Capacity:</strong> 3.5 million barrels</p>
-                                        <p><strong>Products:</strong> Crude oil, refined products, chemicals</p>
-                                        <p><strong>Features:</strong> Deep-water marine terminal, pipeline connections, rail and truck loading facilities</p>
-                                        <a href="#" class="btn btn-sm btn-outline">Terminal Details</a>
-                                    </div>
-                                    
-                                    <div class="terminal-item">
-                                        <h3>New Orleans Terminal</h3>
-                                        <p><strong>Capacity:</strong> 1.8 million barrels</p>
-                                        <p><strong>Products:</strong> Refined products, biofuels</p>
-                                        <p><strong>Features:</strong> Mississippi River access, rail terminal, truck loading racks</p>
-                                        <a href="#" class="btn btn-sm btn-outline">Terminal Details</a>
-                                    </div>
-                                    
-                                    <div class="terminal-item">
-                                        <h3>Corpus Christi Terminal</h3>
-                                        <p><strong>Capacity:</strong> 2.2 million barrels</p>
-                                        <p><strong>Products:</strong> Crude oil, condensate</p>
-                                        <p><strong>Features:</strong> Export-focused facility, deep-water berths, pipeline connections</p>
-                                        <a href="#" class="btn btn-sm btn-outline">Terminal Details</a>
-                                    </div>
-                                    
-                                    <div class="terminal-item">
-                                        <h3>New York Harbor Terminal</h3>
-                                        <p><strong>Capacity:</strong> 1.5 million barrels</p>
-                                        <p><strong>Products:</strong> Refined products, chemicals</p>
-                                        <p><strong>Features:</strong> Marine terminal, barge dock, truck loading facility</p>
-                                        <a href="#" class="btn btn-sm btn-outline">Terminal Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="region-panel" id="europe-terminals">
-                                <div class="terminals-list">
-                                    <div class="terminal-item">
-                                        <h3>Rotterdam Terminal</h3>
-                                        <p><strong>Capacity:</strong> 2.8 million barrels</p>
-                                        <p><strong>Products:</strong> Crude oil, refined products, chemicals, biofuels</p>
-                                        <p><strong>Features:</strong> Deep-water port access, pipeline connections, rail terminal</p>
-                                        <a href="#" class="btn btn-sm btn-outline">Terminal Details</a>
-                                    </div>
-                                    
-                                    <div class="terminal-item">
-                                        <h3>Antwerp Terminal</h3>
-                                        <p><strong>Capacity:</strong> 1.2 million barrels</p>
-                                        <p><strong>Products:</strong> Chemicals, specialty products</p>
-                                        <p><strong>Features:</strong> Chemical storage specialization, barge dock, truck loading facility</p>
-                                        <a href="#" class="btn btn-sm btn-outline">Terminal Details</a>
-                                    </div>
-                                    
-                                    <div class="terminal-item">
-                                        <h3>Hamburg Terminal</h3>
-                                        <p><strong>Capacity:</strong> 0.9 million barrels</p>
-                                        <p><strong>Products:</strong> Refined products, biofuels</p>
-                                        <p><strong>Features:</strong> River access, barge dock, truck loading racks</p>
-                                        <a href="#" class="btn btn-sm btn-outline">Terminal Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="region-panel" id="asia-pacific-terminals">
-                                <div class="terminals-list">
-                                    <div class="terminal-item">
-                                        <h3>Singapore Terminal</h3>
-                                        <p><strong>Capacity:</strong> 1.6 million barrels</p>
-                                        <p><strong>Products:</strong> Refined products, chemicals, biofuels</p>
-                                        <p><strong>Features:</strong> Deep-water berths, advanced automation systems, ship bunkering capability</p>
-                                        <a href="#" class="btn btn-sm btn-outline">Terminal Details</a>
-                                    </div>
-                                    
-                                    <div class="terminal-item">
-                                        <h3>Ulsan Terminal (South Korea)</h3>
-                                        <p><strong>Capacity:</strong> 1.4 million barrels</p>
-                                        <p><strong>Products:</strong> Crude oil, refined products</p>
-                                        <p><strong>Features:</strong> Marine terminal, pipeline connections to refineries</p>
-                                        <a href="#" class="btn btn-sm btn-outline">Terminal Details</a>
-                                    </div>
-                                    
-                                    <div class="terminal-item">
-                                        <h3>Fujairah Terminal (UAE)</h3>
-                                        <p><strong>Capacity:</strong> 1.2 million barrels</p>
-                                        <p><strong>Products:</strong> Crude oil, refined products</p>
-                                        <p><strong>Features:</strong> Strategic location outside Strait of Hormuz, deep-water port</p>
-                                        <a href="#" class="btn btn-sm btn-outline">Terminal Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  </div>
+                  
             </div>
         </section>
         
@@ -416,6 +325,7 @@
         </section>
         
         <!-- Terminal Services Section -->
+        
         <section class="section">
             <div class="container">
                 <div class="section-title">
@@ -504,6 +414,8 @@
                 </div>
             </div>
         </section>
+
+         </div>
         
         <!-- CTA Section -->
         <section class="section bg-primary">
@@ -606,6 +518,32 @@
                 });
             });
         });
+
+        let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+  if (index >= totalSlides) {
+    slideIndex = 0;
+  } else if (index < 0) {
+    slideIndex = totalSlides - 1;
+  }
+  
+  const newTransform = `translateX(-${slideIndex * 100}%)`;
+  document.getElementById('slides').style.transform = newTransform;
+}
+
+function moveSlide(step) {
+  slideIndex += step;
+  showSlide(slideIndex);
+}
+
+// Auto slide
+setInterval(() => {
+  moveSlide(1);
+}, 3000); // 3 seconds
+
     </script>
 </body>
 </html>

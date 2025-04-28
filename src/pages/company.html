@@ -17,6 +17,104 @@
     <link rel="stylesheet" href="../styles/responsive.css">
     <link rel="stylesheet" href="../styles/navbar.css">
 </head>
+<style>
+
+/* Mission Area */
+.mission-area {
+  padding: 50px 20px;
+  line-height: 1.6;
+  background: #fff;
+ 
+}
+
+.mission-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0a3a5a;
+}
+
+.mission-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mission-item {
+  flex: 1 1 300px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.item-heading {
+  margin-bottom: 15px;
+  color: #0a3a5a;
+}
+
+.item-text {
+  font-size: 1rem;
+}
+
+/* Purpose Area */
+.purpose-area {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0a3a5a;
+  color: #fff;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.purpose-image {
+  flex: 1 1 50%;
+}
+
+.purpose-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.purpose-content {
+  flex: 1 1 50%;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.purpose-title {
+  margin-bottom: 20px;
+}
+
+.purpose-text {
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mission-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .purpose-area {
+    flex-direction: column;
+  }
+
+  .purpose-image,
+  .purpose-content {
+    flex: 1 1 100%;
+  }
+}
+
+</style>
 <body>
     <!-- Header -->
     <header class="header">
@@ -254,6 +352,38 @@
                 </div>
             </div>
         </section>
+
+        
+<section class="mission-area">
+    <div class="mission-container">
+      <h2 class="mission-title">OUR MISSION</h2>
+      <div class="mission-grid">
+        <div class="mission-item">
+          <h3 class="item-heading">MAKING IMPACT</h3>
+          <p class="item-text">We commit to a best-in-class performance in service, sustainability, and efficiency... securing the long-term environmental sustainability of our operations.</p>
+        </div>
+        <div class="mission-item">
+          <h3 class="item-heading">DRIVING CHANGE</h3>
+          <p class="item-text">We continue to improve our performance by making decisions that complement and innovate our terminal network... fit for the future.</p>
+        </div>
+        <div class="mission-item">
+          <h3 class="item-heading">AS A TEAM</h3>
+          <p class="item-text">We are a diverse group of committed people, each with unique expertise... maintaining a resilient business culture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="purpose-area">
+    <div class="purpose-image">
+      <img src="../assets/saron pics Done/img7.jpg" alt="Workers">
+    </div>
+    <div class="purpose-content">
+      <h2 class="purpose-title">OUR PURPOSE AND VISION</h2>
+      <p class="purpose-text"><strong>Our purpose</strong> is being the connected partner for sustainable storage solutions... our employees, and the environment.</p>
+    </div>
+  </section>
+  
         
         <!-- Company Links Section -->
         <section class="section bg-primary">
