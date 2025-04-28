@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects - Saron Inc.</title>
+    <meta name="description" content="Explore Saron Inc.'s portfolio of tank storage projects, including construction, maintenance, and safety system upgrades.">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/free-tank-1541446-1303820.png" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../assets/saron pics Done/SaRON B.V. C.png" alt="Saron Logo">
+                    <h1>Saron</h1>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="company.html" class="nav-link">Company</a>
+                            <div class="dropdown-content">
+                                <a href="sustainability.html" class="dropdown-item">Sustainability</a>
+                                <a href="certificates.html" class="dropdown-item">Certificates</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="projects.html" class="nav-link active">Projects</a>
+                            <div class="dropdown-content">
+                                <a href="terminals.html" class="dropdown-item">Terminals</a>
+                                <a href="energy-transition.html" class="dropdown-item">Energy Transition</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link nav-cta">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="hamburger">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Projects</h1>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Projects</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Projects Introduction Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Project Portfolio</h2>
+                    <p>Explore our diverse range of tank storage projects spanning construction, maintenance, safety upgrades, and environmental initiatives.</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="projects-intro">
+                            <p>At Saron Inc., we have successfully completed a wide range of projects that showcase our expertise in tank storage solutions. From new facility construction to modernization of existing infrastructure, our portfolio demonstrates our commitment to safety, quality, and innovation.</p>
+                            <p>Each project is approached with careful planning, meticulous execution, and a focus on meeting or exceeding our clients' expectations. We leverage our extensive experience and technical knowledge to overcome challenges and deliver solutions that provide long-term value.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Project Categories Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="project-filter">
+                    <button class="filter-btn active" data-filter="all" onclick="filterProjects('all')">All Projects</button>
+                    <button class="filter-btn" data-filter="construction" onclick="filterProjects('construction')">Construction</button>
+                    <button class="filter-btn" data-filter="maintenance" onclick="filterProjects('maintenance')">Maintenance</button>
+                    <button class="filter-btn" data-filter="safety" onclick="filterProjects('safety')">Safety</button>
+                    <button class="filter-btn" data-filter="environmental" onclick="filterProjects('environmental')">Environmental</button>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Construction Projects -->
+                    <div class="project-card" data-category="construction">
+                        <div class="project-img">
+                            <img src="../assets/saron pics Done/img1.jpg" alt="Gulf Coast Terminal Expansion">
+                        </div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Gulf Coast Terminal Expansion</h3>
+                            <p class="project-category">Construction</p>
+                            <a href="completed-projects.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="construction">
+                        <div class="project-img">
+                            <img src="../assets/saron pics Done/img2.jpg" alt="Singapore Storage Facility">
+                        </div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Singapore Storage Facility</h3>
+                            <p class="project-category">Construction</p>
+                            <a href="completed-projects.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="construction">
+                        <div class="project-img">
+                            <img src="../assets/saron pics Done/img3.jpg" alt="Rotterdam Terminal">
+                        </div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Rotterdam Terminal</h3>
+                            <p class="project-category">Construction</p>
+                            <a href="completed-projects.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Maintenance Projects -->
+                    <div class="project-card" data-category="maintenance">
+                        <div class="project-img">
+                            <img src="../assets/saron pics Done/img4.jpg" alt="Alaska Pipeline Maintenance">
+                        </div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Alaska Pipeline Maintenance</h3>
+                            <p class="project-category">Maintenance</p>
+                            <a href="completed-projects.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="maintenance">
+                        <div class="project-img">
+                            <img src="../assets/saron pics Done/img5.jpg" alt="Texas Terminal Upgrade">
+                        </div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Texas Terminal Upgrade</h3>
+                            <p class="project-category">Maintenance</p>
+                            <a href="completed-projects.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Safety Projects -->
+                    <div class="project-card" data-category="safety">
+                        <div class="project-img">
+                            <img src="../assets/saron pics Done/img7.jpg" alt="Safety Systems Upgrade">
+                        </div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Safety Systems Upgrade</h3>
+                            <p class="project-category">Safety</p>
+                            <a href="completed-projects.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="safety">
+                        <div class="project-img">
+                            <img src="../assets/saron pics Done/img8.jpg" alt="Fire Protection Enhancement">
+                        </div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Fire Protection Enhancement</h3>
+                            <p class="project-category">Safety</p>
+                            <a href="ongoing-projects.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Environmental Projects -->
+                    <div class="project-card" data-category="environmental">
+                        <div class="project-img">
+                            <img src="../assets/saron pics Done/img10.jpg" alt="Emissions Reduction Initiative">
+                        </div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Emissions Reduction Initiative</h3>
+                            <p class="project-category">Environmental</p>
+                            <a href="ongoing-projects.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="environmental">
+                        <div class="project-img">
+                            <img src="../assets/saron pics Done/img11.jpg" alt="Sustainable Storage Project">
+                        </div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Sustainable Storage Project</h3>
+                            <p class="project-category">Environmental</p>
+                            <a href="ongoing-projects.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Project Approach Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Project Approach</h2>
+                    <p>How we deliver successful tank storage projects from concept to completion.</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-6 col-md-12">
+                        <div class="approach-content">
+                            <p>At Saron Inc., we follow a structured and comprehensive approach to project execution that ensures quality, safety, and client satisfaction. Our methodology is based on industry best practices and refined through years of experience in delivering complex storage projects.</p>
+                            
+                            <div class="approach-steps">
+                                <div class="approach-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h3>Initial Consultation</h3>
+                                        <p>We begin by thoroughly understanding your needs, objectives, constraints, and timeline. This forms the foundation for all subsequent project activities.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="approach-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h3>Detailed Planning</h3>
+                                        <p>Our engineering team develops comprehensive plans that address technical specifications, safety requirements, regulatory compliance, and logistical considerations.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="approach-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h3>Execution</h3>
+                                        <p>We implement the project with skilled teams, stringent quality control, and continuous monitoring to ensure adherence to plans, specifications, and safety standards.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="approach-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h3>Commissioning</h3>
+                                        <p>Once construction is complete, we conduct thorough testing and commissioning to verify that all systems function as designed and meet regulatory requirements.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="approach-step">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h3>Handover and Support</h3>
+                                        <p>We provide comprehensive documentation, training for operational staff, and ongoing support to ensure a smooth transition to operations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-6 col-md-12">
+                        <div class="approach-img">
+                            <img src="../assets/saron pics Done/img12.jpg" alt="Project Management" class="img-fluid">
+                            
+                            <div class="approach-features mt-4">
+                                <div class="feature-item">
+                                    <h3><i class="fas fa-check-circle"></i> Quality Assurance</h3>
+                                    <p>Rigorous quality control procedures throughout all project phases ensure that every aspect of our work meets or exceeds industry standards and client expectations.</p>
+                                </div>
+                                
+                                <div class="feature-item">
+                                    <h3><i class="fas fa-check-circle"></i> Safety Focus</h3>
+                                    <p>Safety is integrated into every aspect of our project execution. We maintain comprehensive safety plans, conduct regular audits, and empower all team members to prioritize safe practices.</p>
+                                </div>
+                                
+                                <div class="feature-item">
+                                    <h3><i class="fas fa-check-circle"></i> Transparent Communication</h3>
+                                    <p>We maintain open channels of communication with clients, providing regular updates on progress, promptly addressing concerns, and collaboratively solving challenges as they arise.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="section bg-primary">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-8 col-md-12">
+                        <h2 class="text-white mb-3">Have a Tank Storage Project in Mind?</h2>
+                        <p class="text-white">Contact our expert team to discuss how Saron Inc. can help bring your project to successful completion.</p>
+                    </div>
+                    <div class="col-4 col-md-12 text-right">
+                        <a href="contact.html" class="btn btn-secondary btn-lg">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="footer-widget footer-about">
+                            <h3>About Saron</h3>
+                            <p>Saron Inc. is a leading provider of high-quality tank storage solutions for the oil, gas, and chemical industries. With over 25 years of experience, we deliver reliable and efficient storage systems that meet the highest safety standards.</p>
+                            <p>We pride ourselves on engineering excellence, safety innovation, and environmental responsibility.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="footer-widget footer-links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4 col-md-12 col-sm-12">
+                        <div class="footer-widget footer-newsletter">
+                            <h3>Newsletter</h3>
+                            <p>Subscribe to our newsletter to receive latest news, updates, and industry insights.</p>
+                            <form class="newsletter-form" id="newsletter-form">
+                                <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+                                <button type="submit" class="newsletter-submit"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2023 Saron Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="../script/script.js"></script>
+</body>
+</html>

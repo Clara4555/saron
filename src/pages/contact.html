@@ -3,13 +3,327 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-
- <link rel="stylesheet" href="../styles/contact.css">
-    <link rel="stylesheet" href="../../public/public.css">
-    <link rel="stylesheet" href="../../public/style.css">
+    <title>Contact Us - Saron Inc.</title>
+    <meta name="description" content="Get in touch with Saron Inc., a leading provider of tank storage solutions. Contact us for inquiries, quotes, or support.">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/free-tank-1541446-1303820.png" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
 </head>
 <body>
-    <script src="../js/"></script>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../assets/saron pics Done/SaRON B.V. C.png" alt="Saron Logo">
+                    <h1>Saron</h1>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../../index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="company.html" class="nav-link">Company</a>
+                            <div class="dropdown-content">
+                                <a href="sustainability.html" class="dropdown-item">Sustainability</a>
+                                <a href="certificates.html" class="dropdown-item">Certificates</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="projects.html" class="nav-link">Projects</a>
+                            <div class="dropdown-content">
+                                <a href="terminals.html" class="dropdown-item">Terminals</a>
+                                <a href="energy-transition.html" class="dropdown-item">Energy Transition</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link nav-cta active">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="hamburger">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Contact Us</h1>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../pages/index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Contact</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Contact Information Section -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="contact-info">
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h3>Our Location</h3>
+                                    <p>123 Industry Blvd<br>Houston, TX 77001<br>United States</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h3>Phone Number</h3>
+                                    <p>Main Office: +1 (555) 123-4567<br>Support: +1 (555) 987-6543</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h3>Email Address</h3>
+                                    <p>info@Saron.com<br>support@Saron.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-info-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-info-text">
+                                    <h3>Office Hours</h3>
+                                    <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday - Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-8 col-md-6 col-sm-12">
+                        <div class="contact-form-container">
+                            <h2>Send Us a Message</h2>
+                            <p>Fill out the form below to get in touch with our team. We will respond to your inquiry as soon as possible.</p>
+                            
+                            <div id="form-alert" class="alert" style="display: none;"></div>
+                            
+                            <form id="contact-form" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name <span class="required">*</span></label>
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-control">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message <span class="required">*</span></label>
+                                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                                </div>
+                                
+                                <button type="submit" href="thank-you.html" class="btn send btn-primary btn-lg">
+                                    <a href="thank-you.html">Send Message</a>
+                                </button>
+                                <style>
+                                    .send a{
+                                        text-decoration: none;
+                                        color: white;
+                                    }
+                                </style>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Map Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Locations</h2>
+                    <p>Find Saron Inc. facilities across the United States and internationally.</p>
+                </div>
+                
+                <div class="map-container">
+                    <div class="map-tabs">
+                        <button class="map-tab active" data-location="houston">Houston, TX (HQ)</button>
+                        <button class="map-tab" data-location="louisiana">New Orleans, LA</button>
+                        <button class="map-tab" data-location="singapore">Singapore</button>
+                        <button class="map-tab" data-location="rotterdam">Rotterdam, NL</button>
+                    </div>
+                    
+                    <div class="map-content">
+                        <!-- For a real site, we would use an actual map API like Google Maps -->
+                        <!-- For this example, we're using placeholder map images -->
+                        <div class="map-frame active" id="houston-map">
+                            <img src="https://maps.googleapis.com/maps/api/staticmap?center=Houston,TX&zoom=12&size=800x400&key=YOUR_API_KEY" alt="Houston Office Map">
+                            <div class="map-info">
+                                <h3>Houston Headquarters</h3>
+                                <p>123 Industry Blvd, Houston, TX 77001</p>
+                                <p>Phone: +1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="map-frame" id="louisiana-map">
+                            <img src="https://maps.googleapis.com/maps/api/staticmap?center=New+Orleans,LA&zoom=12&size=800x400&key=YOUR_API_KEY" alt="Louisiana Office Map">
+                            <div class="map-info">
+                                <h3>New Orleans Facility</h3>
+                                <p>456 Port Avenue, New Orleans, LA 70123</p>
+                                <p>Phone: +1 (555) 234-5678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="map-frame" id="singapore-map">
+                            <img src="https://maps.googleapis.com/maps/api/staticmap?center=Singapore&zoom=12&size=800x400&key=YOUR_API_KEY" alt="Singapore Office Map">
+                            <div class="map-info">
+                                <h3>Singapore Office</h3>
+                                <p>789 Harbor Road, Singapore 123456</p>
+                                <p>Phone: +65 6123 4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="map-frame" id="rotterdam-map">
+                            <img src="https://maps.googleapis.com/maps/api/staticmap?center=Rotterdam,Netherlands&zoom=12&size=800x400&key=YOUR_API_KEY" alt="Rotterdam Office Map">
+                            <div class="map-info">
+                                <h3>Rotterdam Terminal</h3>
+                                <p>101 Port Way, Rotterdam, Netherlands</p>
+                                <p>Phone: +31 10 123 4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="footer-widget footer-about">
+                            <h3>About Saron</h3>
+                            <p>Saron Inc. is a leading provider of high-quality tank storage solutions for the oil, gas, and chemical industries. With over 25 years of experience, we deliver reliable and efficient storage systems that meet the highest safety standards.</p>
+                            <p>We pride ourselves on engineering excellence, safety innovation, and environmental responsibility.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="footer-widget footer-links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="../pages/index.html">Home</a></li>
+                                <li><a href="../pages/about-us.html">About Us</a></li>
+                                <li><a href="../pages/services.html">Services</a></li>
+                                <li><a href="../pages/projects.html">Projects</a></li>
+                                <li><a href="../pages/news.html">News</a></li>
+                                <li><a href="../pages/contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4 col-md-12 col-sm-12">
+                        <div class="footer-widget footer-newsletter">
+                            <h3>Newsletter</h3>
+                            <p>Subscribe to our newsletter to receive latest news, updates, and industry insights.</p>
+                            <form class="newsletter-form" id="newsletter-form">
+                                <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+                                <button type="submit" class="newsletter-submit"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="../pages/#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="../pages/#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="../pages/#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="../pages/#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2023 Saron Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="../script/script.js"></script>
+    <script src="../script/contact.js"></script>
+    
+    <script>
+        // Map Tab Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mapTabs = document.querySelectorAll('.map-tab');
+            const mapFrames = document.querySelectorAll('.map-frame');
+            
+            mapTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Update active tab
+                    mapTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show corresponding map
+                    const location = this.dataset.location;
+                    mapFrames.forEach(frame => {
+                        frame.classList.remove('active');
+                        if (frame.id === `${location}-map`) {
+                            frame.classList.add('active');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>

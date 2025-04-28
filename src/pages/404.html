@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - TankStore Inc.</title>
+    <meta name="description" content="The page you are looking for could not be found. Please check the URL or return to the homepage.">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/free-tank-1541446-1303820.png" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 100px 20px;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .error-code {
+            font-size: 120px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        
+        .error-message {
+            font-size: 28px;
+            color: var(--dark);
+            margin-bottom: 30px;
+        }
+        
+        .error-description {
+            max-width: 500px;
+            margin: 0 auto 40px;
+            color: var(--medium);
+        }
+        
+        .error-icon {
+            font-size: 60px;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../assets/saron pics Done/SaRON B.V. C.png" alt="TankStore Logo">
+                    <h1>TankStore</h1>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="../pages/index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="../pages/company.html" class="nav-link">Company</a>
+                            <div class="dropdown-content">
+                                <a href="../pages/sustainability.html" class="dropdown-item">Sustainability</a>
+                                <a href="../pages/certificates.html" class="dropdown-item">Certificates</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="../pages/projects.html" class="nav-link">Projects</a>
+                            <div class="dropdown-content">
+                                <a href="../pages/terminals.html" class="dropdown-item">Terminals</a>
+                                <a href="../pages/energy-transition.html" class="dropdown-item">Energy Transition</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/news.html" class="nav-link">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../pages/contact.html" class="nav-link nav-cta">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="hamburger">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main">
+        <div class="error-container">
+            <div class="error-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="error-code">404</div>
+            <h1 class="error-message">Page Not Found</h1>
+            <p class="error-description">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+            <div class="error-buttons">
+                <a href="../pages/index.html" class="btn btn-primary">Return to Homepage</a>
+                <a href="../pages/contact.html" class="btn btn-outline">Contact Support</a>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="footer-widget footer-about">
+                            <h3>About TankStore</h3>
+                            <p>TankStore Inc. is a leading provider of high-quality tank storage solutions for the oil, gas, and chemical industries. With over 25 years of experience, we deliver reliable and efficient storage systems that meet the highest safety standards.</p>
+                            <p>We pride ourselves on engineering excellence, safety innovation, and environmental responsibility.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="footer-widget footer-links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="../pages/index.html">Home</a></li>
+                                <li><a href="../pages/company.html">Company</a></li>
+                                <li><a href="../pages/services.html">Services</a></li>
+                                <li><a href="../pages/projects.html">Projects</a></li>
+                                <li><a href="../pages/news.html">News</a></li>
+                                <li><a href="../pages/contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4 col-md-12 col-sm-12">
+                        <div class="footer-widget footer-newsletter">
+                            <h3>Newsletter</h3>
+                            <p>Subscribe to our newsletter to receive latest news, updates, and industry insights.</p>
+                            <form class="newsletter-form" id="newsletter-form">
+                                <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+                                <button type="submit" class="newsletter-submit"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2023 TankStore Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="../script/script.js"></script>
+</body>
+</html>

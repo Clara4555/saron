@@ -1,15 +1,386 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/style.css">
-    <link rel="stylesheet" href="./public/public.css">
-    <title>Saron </title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="./src/js/"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saron Inc. - Professional Oil Tank Storage Solutions</title>
+    <meta name="description" content="Saron Inc. offers premium tank storage solutions for oil, gas, and chemicals. We provide safe, reliable, and efficient storage systems for various industries.">
+    <meta name="keywords" content="tank storage, oil storage, industrial storage, storage tanks, oil industry">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/free-tank-1541446-1303820.png" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/navbar.css">
+    <link rel="stylesheet" href="./src/styles/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./src/assets/saron pics Done/SaRON B.V. C.png" alt="Saron Logo">
+                    <h1>Saron</h1>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="./src/pages/index.html" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="./src/pages/company.html" class="nav-link">Company</a>
+                            <div class="dropdown-content">
+                                <a href="./src/pages/sustainability.html" class="dropdown-item">Sustainability</a>
+                                <a href="./src/pages/certificates.html" class="dropdown-item">Certificates</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./src/pages/services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="./src/pages/projects.html" class="nav-link">Projects</a>
+                            <div class="dropdown-content">
+                                <a href="./src/pages/terminals.html" class="dropdown-item">Terminals</a>
+                                <a href="./src/pages/energy-transition.html" class="dropdown-item">Energy Transition</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./src/pages/news.html" class="nav-link">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./src/pages/contact.html" class="nav-link nav-cta">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="hamburger">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Industry Leading Tank Storage Solutions</h1>
+                    <p class="hero-text">Saron Inc. provides cutting-edge storage solutions for the oil, gas, and chemical industries. Our state-of-the-art facilities offer secure, efficient, and environmentally responsible storage options.</p>
+                    <div class="hero-buttons">
+                        <a href="./src/pages/services.html" class="btn btn-primary btn-lg">Our Services</a>
+                        <a href="./src/pages/contact.html" class="btn btn-outline btn-lg">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Us</h2>
+                    <p>Saron Inc. is a global leader in tank storage solutions with over 25 years of experience in the industry.</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-6 col-md-12">
+                        <div class="about-img">
+                            <img src="./src/assets/saron pics Done/img1.jpg" alt="Saron Facility" class="img-fluid">
+                        </div>
+                    </div>
+                    
+                    <div class="col-6 col-md-12">
+                        <div class="about-content">
+                            <h2>The Leading Provider of Storage Solutions</h2>
+                            <p>Founded in 1998, Saron Inc. has grown to become an industry leader in providing secure and efficient tank storage solutions for oil, gas, and chemicals. Our company owns and operates strategically located storage facilities across North America and Europe.</p>
+                            <p>We pride ourselves on our commitment to safety, environmental responsibility, and operational excellence. Our facilities are equipped with state-of-the-art technology and managed by highly trained professionals who ensure that all operations meet or exceed industry standards.</p>
+                            <a href="./src/pages/sustainability.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Services</h2>
+                    <p>We offer a comprehensive range of tank storage solutions tailored to meet the unique needs of our clients.</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="service-card">
+                            <div class="service-img">
+                                <img src="./src/assets/saron pics Done/img2.jpg" alt="Crude Oil Storage">
+                            </div>
+                            <div class="service-content">
+                                <h3>Crude Oil Storage</h3>
+                                <p>Our crude oil storage facilities provide secure containment solutions with flexible capacity options to meet your operational requirements.</p>
+                                <a href="./src/pages/services.html" class="btn btn-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="service-card">
+                            <div class="service-img">
+                                <img src="./src/assets/saron pics Done/img3.jpg" alt="Chemical Storage">
+                            </div>
+                            <div class="service-content">
+                                <h3>Chemical Storage</h3>
+                                <p>Our specialized chemical storage tanks are designed to safely contain a wide range of chemical products in compliance with all regulatory standards.</p>
+                                <a href="./src/pages/services.html" class="btn btn-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="service-card">
+                            <div class="service-img">
+                                <img src="./src/assets/saron pics Done/img4.jpg" alt="Refined Products Storage">
+                            </div>
+                            <div class="service-content">
+                                <h3>Refined Products Storage</h3>
+                                <p>We offer storage solutions for refined petroleum products including gasoline, diesel, and jet fuel with advanced monitoring systems.</p>
+                                <a href="./src/pages/services.html" class="btn btn-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <a href="./src/pages/services.html" class="btn btn-secondary">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section stats-section">
+            <div class="container">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-value" data-value="25">0</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-value" data-value="500">0</div>
+                        <div class="stat-label">Completed Projects</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-value" data-value="15">0</div>
+                        <div class="stat-label">Global Locations</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-value" data-value="1000">0</div>
+                        <div class="stat-label">Satisfied Clients</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section Preview -->
+        <section class="section projects-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Featured Projects</h2>
+                    <p>Explore some of our most successful and innovative tank storage projects.</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card" data-category="construction">
+                        <div class="project-img">
+                            <img src="./src/assets/saron pics Done/img5.jpg" alt="Gulf Coast Terminal Expansion">
+                        </div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Gulf Coast Terminal Expansion</h3>
+                            <p class="project-category">Construction</p>
+                            <a href="./src/pages/terminals.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="maintenance">
+                        <div class="project-img">
+                            <img src="./src/assets/saron pics Done/img7.jpg" alt="Alaska Pipeline Maintenance">
+                        </div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Alaska Pipeline Maintenance</h3>
+                            <p class="project-category">Maintenance</p>
+                            <a href="./src/pages/terminals.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="safety">
+                        <div class="project-img">
+                            <img src="./src/assets/saron pics Done/img8.jpg" alt="Safety Systems Upgrade">
+                        </div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Safety Systems Upgrade</h3>
+                            <p class="project-category">Safety</p>
+                            <a href="./src/pages/energy-transition.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <a href="./src/pages/projects.html" class="btn btn-secondary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section testimonials-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What Our Clients Say</h2>
+                    <p>Read testimonials from our satisfied clients across various industries.</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-6 col-md-12">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">Saron Inc. has been our trusted partner for over a decade. Their storage solutions are reliable, and their team's expertise in handling complex requirements is unmatched. We highly recommend their services.</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">
+                                    <img src="./src/assets/saron pics Done/img9.jpg" alt="John Anderson">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4>John Anderson</h4>
+                                    <p class="testimonial-company">Operations Director, PetroMax Industries</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-6 col-md-12">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">Working with Saron has significantly improved our logistics efficiency. Their facilities are strategically located, and their staff provides excellent support. A truly professional organization.</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">
+                                    <img src="./src/assets/saron pics Done/img10.jpg" alt="Sarah Thompson">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4>Sarah Thompson</h4>
+                                    <p class="testimonial-company">Supply Chain Manager, Global Chemicals Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section Preview -->
+        <section class="section news-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Latest News</h2>
+                    <p>Stay updated with the latest developments and news from Saron Inc.</p>
+                </div>
+                
+                <div class="news-grid" id="latest-news">
+                    <!-- News items will be populated by JavaScript -->
+                </div>
+                
+                <div class="text-center mt-4">
+                    <a href="./src/pages/news.html" class="btn btn-secondary">View All News</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section bg-primary">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-8 col-md-12">
+                        <h2 class="text-white mb-3">Ready to Discuss Your Storage Needs?</h2>
+                        <p class="text-white">Contact our team today to learn how Saron Inc. can provide the perfect storage solution for your business.</p>
+                    </div>
+                    <div class="col-4 col-md-12 text-right">
+                        <a href="./src/pages/contact.html" class="btn btn-secondary btn-lg">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="footer-widget footer-about">
+                            <h3>About Saron</h3>
+                            <p>Saron Inc. is a leading provider of high-quality tank storage solutions for the oil, gas, and chemical industries. With over 25 years of experience, we deliver reliable and efficient storage systems that meet the highest safety standards.</p>
+                            <p>We pride ourselves on engineering excellence, safety innovation, and environmental responsibility.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4 col-md-6 col-sm-12">
+                        <div class="footer-widget footer-links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="./src/pages/index.html">Home</a></li>
+                                <li><a href="./src/pages/company.html">Company</a></li>
+                                <li><a href="./src/pages/services.html">Services</a></li>
+                                <li><a href="./src/pages/projects.html">Projects</a></li>
+                                <li><a href="./src/pages/news.html">News</a></li>
+                                <li><a href="./src/pages/contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-4 col-md-12 col-sm-12">
+                        <div class="footer-widget footer-newsletter">
+                            <h3>Newsletter</h3>
+                            <p>Subscribe to our newsletter to receive latest news, updates, and industry insights.</p>
+                            <form class="newsletter-form" id="newsletter-form">
+                                <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+                                <button type="submit" class="newsletter-submit"><i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2023 Saron Inc. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="./src/script/contact.js"></script>
+    <script src="./src/script/news.js"></script>
+    <script src="./src/script/script.js"></script>
+</body>
 </html>

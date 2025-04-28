@@ -1,0 +1,261 @@
+/*==============================================================================
+* Responsive CSS for Tank Oiling Storage Company
+* Author: Professional Web Developer
+* Version: 1.0
+===============================================================================*/
+
+/*==============================================================================
+* Media Queries
+===============================================================================*/
+
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+/* Large Devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .stat-value {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medium Devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-text {
+        font-size: 1.1rem;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .navbar {
+        padding: 0 var(--space-lg);
+    }
+    
+    .nav-list {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 80px 30px 30px;
+        box-shadow: var(--shadow-lg);
+        z-index: 999;
+        transition: right var(--transition-normal);
+        overflow-y: auto;
+    }
+    
+    .nav-list.active {
+        right: 0;
+    }
+    
+    .nav-item {
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    .nav-link {
+        padding: 15px 0;
+        display: block;
+    }
+    
+    .dropdown-content {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background-color: #f9f9f9;
+        padding: 0;
+        width: 100%;
+        display: none;
+    }
+    
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown-item {
+        padding: 12px 20px;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .team-grid,
+    .projects-grid,
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Small Devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-text {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .section-title h2 {
+        font-size: 1.75rem;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .project-filter {
+        flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+        margin-bottom: var(--space-sm);
+    }
+    
+    .stat-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: var(--space-lg);
+    }
+    
+    .team-grid,
+    .projects-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Extra Small Devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-text {
+        font-size: 0.9rem;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+    }
+    
+    .navbar {
+        height: 70px;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .nav-list {
+        width: 260px;
+        padding: 70px 20px 20px;
+    }
+    
+    .footer-widget {
+        margin-bottom: var(--space-xl);
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-input {
+        border-radius: var(--border-radius-sm);
+        margin-bottom: var(--space-sm);
+    }
+    
+    .newsletter-submit {
+        border-radius: var(--border-radius-sm);
+        padding: 10px;
+    }
+    
+    .stat-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-icon {
+        margin: 0 auto var(--space-md);
+    }
+}
