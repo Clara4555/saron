@@ -89,7 +89,7 @@
 .nav-link {
     font-size: 0.95rem;
     font-weight: 600;
-    letter-spacing: 0.5px;
+
     color: var(--medium-dark);
     padding: 0.6rem 1rem;
     border-radius: 4px;
@@ -168,10 +168,10 @@
     background-color: var(--white);
     box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.04);
 }
-
 .dropdown-item {
     display: block;
-    padding: 0.7rem 1.2rem;
+    padding: 0.7rem 1.7rem; /* ← Increase padding here (before: 1.2rem) */
+    align-items: center;
     color: var(--medium-dark);
     font-size: 0.9rem;
     transition: all 0.3s ease;
@@ -181,8 +181,9 @@
 .dropdown-item:hover {
     background-color: rgba(20, 78, 140, 0.05);
     color: var(--primary-color);
-    padding-left: 1.5rem;
+  
 }
+
 
 .dropdown-item::before {
     content: '';
@@ -192,7 +193,7 @@
     width: 0;
     height: 2px;
     background-color: var(--primary-color);
-    transition: all 0.3s ease;
+    /* transition: all 0.3s ease; */
     transform: translateY(-50%);
     opacity: 0;
 }
