@@ -83,7 +83,7 @@
     }
     
     .dropdown-content {
-        position: static;
+        /* position: static; */
         opacity: 1;
         visibility: visible;
         transform: none;
@@ -91,7 +91,9 @@
         background-color: #f9f9f9;
         padding: 0;
         width: 100%;
+        color: red !important;
         display: none;
+        margin-left: 40%;
     }
     
     .dropdown.active .dropdown-content {
