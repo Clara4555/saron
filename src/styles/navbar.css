@@ -55,6 +55,7 @@
     margin-left: var(--space-sm);
     position: relative;
     transition: color 0.3s ease;
+    margin-top: -2%;
 }
 
 .logo h1::after {
