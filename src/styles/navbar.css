@@ -59,7 +59,7 @@
 }
 
 .logo h1::after {
-    content: 'Inc.';
+    content: 'B.V';
     position: absolute;
     bottom: -3px;
     right: -20px;
